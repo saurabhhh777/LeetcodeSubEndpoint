@@ -15,6 +15,14 @@ const convertTimestamp = (timestamp) => {
   return date.toISOString().split("T")[0]; // Format as YYYY-MM-DD
 };
 
+app.get("/",(req,res)=>{
+    return res.status(200).json({
+        message:"Leetcode Submission Endpoint is Working !",
+        success:true,
+    });
+
+});
+
 app.get("/leetcode/:username", async (req, res) => {
   const { username } = req.params; // Get username from query parameter
 
