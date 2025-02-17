@@ -18,6 +18,10 @@ const convertTimestamp = (timestamp) => {
 app.get("/",(req,res)=>{
     return res.status(200).json({
         message:"Leetcode Submission Endpoint is Working !",
+        example:{
+            text:"Hit 👇 this url",
+            url:"https://leetcode-sub-endpoint.vercel.app/leetcode/saurabhhh777"
+        },
         success:true,
     });
 
